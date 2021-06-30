@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="daohanglan">
+
+    <ul>
+        <li id="DL"><a href="login.html">登录&nbsp;</a></li>
+        <li id="DL">/&nbsp;</li>
+        <li id="DL"><a href="register.html">注册&nbsp;</a></li>
+    </ul>
+    <div class="container">
+        <nav>
+            <a href="index.html">首 页</a>
+            <a href="shipu.html">食 谱</a>
+            <a href="liaotianshi.html">打 卡</a>
+            <a href="#">个人中心</a>
+            <!-- 实际案例中实用需要控制start-contact -->
+            <!-- 让当前focus在那个链接下面 -->
+            <div class="animation start-home"></div>
+        </nav>
+    </div>
+
+
+</div>
+<form action="SearchServlet" method="post" >
+    <div class="bg">
+        <div class="img1">
+            <p>食物营养成分查询</p>
+        </div>
+        <div class="search-box" >
+            <input class="search-txt" type="text" name="search" placeholder="请输入食物名称或者食物种类">
+            <input type="submit" value="搜索"/><br/>
+        </div>
+
+        <div class="box">
+
+            <div class="item">
+                <!-- 默认第一个选中 -->
+                <input type="radio" name="btn" id="btn1" checked>
+                <label for="btn1" style="--i:1"></label>
+                <div class="img">
+                    <img src="img/001.jpg" alt="">
+                    <div class="right"> 蔬 菜 </div>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <input type="radio" name="btn" id="btn2">
+                <label for="btn2" style="--i:2"></label>
+                <div class="img">
+                    <img src="img/002.jpg" alt="">
+                    <div class="right"> 午 餐 </div>
+                </div>
+            </div>
+            <div class="item">
+                <input type="radio" name="btn" id="btn3">
+                <label for="btn3" style="--i:3"></label>
+                <div class="img">
+                    <img src="img/003.jpg" alt="">
+                    <div class="right"> 早 茶 </div>
+                </div>
+            </div>
+            <div class="item">
+                <input type="radio" name="btn" id="btn4">
+                <label for="btn4" style="--i:4"></label>
+                <div class="img">
+                    <img src="img/004.jpg" alt="">
+                    <div class="right"> 三明治 </div>
+                </div>
+            </div>
+            <div class="item">
+                <input type="radio" name="btn" id="btn5">
+                <label for="btn5" style="--i:5"></label>
+                <div class="img">
+                    <img src="img/05.jpg" alt="">
+                    <div class="right"> 甜 品 </div>
+                </div>
+            </div>
+            <div class="item">
+                <input type="radio" name="btn" id="btn6">
+                <label for="btn6" style="--i:6"></label>
+                <div class="img">
+                    <img src="img/06.jpg" alt="">
+                    <div class="right"> 生 煎 </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</form>
+</body>
+</html>
